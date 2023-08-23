@@ -2,11 +2,11 @@
 import axios from 'axios';
 
   export default{
-    name:'helloworld',
+    name:'ProjectCard',
     mounted(){
       axios.get('http://127.0.0.1:8000/api/v1/project-index')
       .then(response => {
-        console.log(response);
+        console.log(response.data);
       })
       .catch(error => {
         console.log(error);
